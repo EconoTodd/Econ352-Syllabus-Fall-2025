@@ -1,0 +1,324 @@
+\documentclass[11pt]{article}
+\usepackage[english]{babel}
+\usepackage{mlmodern}
+\setlength\parindent{0pt}
+\usepackage{graphicx}
+\usepackage[svgnames]{xcolor}
+\usepackage{pgfplots}
+\usepackage{hhline}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue]{hyperref}
+\usepackage{transparent}
+\usepackage[top = 0.5in, right = 1in, left = 1in, bottom = 1in]{geometry}
+\usepackage{float}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{fit}
+\usepackage[bottom,flushmargin]{footmisc}
+\usepackage{enumitem}
+\usepackage{setspace}
+
+\begin{document}
+	
+	\begin{center}
+	\includegraphics[width=0.8\linewidth]{logo}
+	
+	\vspace{0.15in}
+	
+	{\Large \href{https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_display_courses?term_in=202610&one_subj=ECON&sel_crse_strt=35200&sel_crse_end=35200&sel_subj=&sel_levl=&sel_schd=&sel_coll=&sel_divs=&sel_dept=&sel_attr=}{Economics 352: Intermediate Macroeconomics} $|$ Fall 2025 }
+	
+	\vspace{0.05in}
+	
+	CRN: 23777 T \& R 10:30-11:45am $|$ \href{https://duckduckgo.com/?q=mechanical+engeering+building+purdue&iaxm=maps}{Mechanical Engineering Building 1012}
+			
+		\end{center}
+		
+		\begin{minipage}{0.42\linewidth}
+			
+			\textit{\textbf{Instructor}}: Todd R. Yarbrough, Ph.D.
+			
+			\textit{\textbf{Email}}: tyarbrou@purdue.edu
+			
+			\textit{\textbf{Office}}: Krannert 337
+			
+			\textit{\textbf{Office Hours}}: 
+			
+			\hspace{0.15in} Mondays 9:30am - 11:30am
+			
+			\hspace{0.15in} Wednesday 1:30pm - 3:30pm
+			
+			\textbf{\textit{Course Discord}}: \href{https://discord.gg/jDFHMvC8SS}{Link!}
+			
+			\bigskip
+			
+			\bigskip
+			
+		\end{minipage}
+		\hspace{0.0cm}
+		\begin{minipage}{0.57\linewidth}
+			
+			\textbf{Teaching Assistants (office hours)}: 
+			
+			\hspace{0.05in} Shelly Z., zhu1319@purdue.edu (grader)
+			
+			\hspace{0.05in} Kavya R., kramcha@purdue.edu (3:30-5:30pm, M\&W)
+			
+			\hspace{0.05in} Srikar C., chintal6@purdue.edu (3-7pm, F)
+			
+			Note: TA office hours will be held on 2nd floor of Krannert and/or over Zoom at the listed times. TAs will post guidance on specific location to Brightspace at beginning of the semester. 
+			
+			\bigskip
+			
+		\end{minipage}
+			
+			\section{General Information}
+			
+			\textbf{Course Description}: This course examines the determination of income, employment, the price level, interest rates, and exchange rates in the macroeconomy. Piece by piece, we will construct simple models that describe how these variables are determined in the long run, medium run, and short run. The course is roughly divided into three units. We will start with the economy in the very long run, and consider the role of capital accumulation, population growth, and technological progress in the growth rate of an economy. Next we will consider the medium run, where economic fluctuations are related to investment, while prices are flexible and markets clear. Finally, we will inspect the short run where prices are sticky and markets may not clear. Throughout we will contextualize our models of the macroeconomy with specific consideration of the labor market and inflation. Also, special attention will be paid to the role of financial services in the macroeconomy. 
+			
+	\section{Materials}
+	
+	\begin{enumerate}
+		
+		\item While there is no required textbook, as all readings will be posted as PDFs to Brightspace, I do encourage you pick up copies of the texts we will be using. Cheap used copies abound and good to have on hand for reference in my opinion. For the Garin et al. text, see link below for full PDF of the textbook.
+		
+		\subitem Snowdon \& Vane (2005). \textit{Modern Macroeconomics}. Edward Elgar Publishing.
+		
+		\subitem Mankiw (2021). \textit{Macroeconomics} (11th edition). Worth Publishers.
+		
+		\subitem \href{https://www3.nd.edu/~esims1/gls_textbook.html}{Garin, Lester, \& Sims (2018). \textit{Intermediate Macroeconomics}}. 
+		
+		
+		\vspace{0.05in}
+		
+		\item Throughout the semester we will use data from the \href{https://fred.stlouisfed.org/}{Federal Reserve (FRED)}; \href{https://www.bea.gov/}{Bureau of Economic Analysis (BEA)}; and the \href{https://data.worldbank.org/}{World Bank Open Data}.
+	\end{enumerate}
+	
+	\begin{center} 
+		\begin{minipage}{\linewidth}
+			\begin{center}
+				\includegraphics[width=0.2\linewidth]{f} 
+				\hspace{0.5in}	\includegraphics[width=0.2\linewidth]{b}
+				\hspace{0.5in}	\includegraphics[width=0.2\linewidth]{w}
+			\end{center}
+		\end{minipage}
+	\end{center}
+	
+	\pagebreak 
+	
+		\pagebreak
+	
+	\section{Schedule}
+	
+	\small
+	
+	{\setstretch{1.25}
+		
+		\begin{tabular}{|l|l|}
+			\hline
+			Aug. 26 & Introduction\\
+			\hline
+			Aug. 28 & Review + Some Historical Perspective\\
+			\hline
+			Sept. 2 & Micro-foundations I - Intertemporal Utility \\
+			\hline
+			Sept. 4 & Micro-foundations II - A Dynamic Consumption/Savings Model \\ 
+			\hline
+			Sept. 9 & Micro-foundations III - Production, Investment, and Labor Markets \\
+			\hline
+			Sept. 11 & Review + The Classical Model\\
+			\hline
+			Sept. 16 & The Neo-classical Model\\
+			\hline
+			Sept. 18 & Money and Inflation I - Monetary Basics + Quantity Equation \\
+			\hline
+			Sept. 23 & Money and Inflation II - Fisher Effect \\
+			\hline
+			Sept. 25 & Open Economy - Exchange Rates\\
+			\hline
+			Sept. 30 & Exam 1 \\
+			\hline
+			Oct. 2& Keynesian Revolution I - ISLM framework \\
+			\hline
+			Oct. 7 & Keynesian Revolution II - Mundell-Fleming Model\\
+			\hline
+			Oct. 9 & Unemployment - A Steady State Model of the Labor Market\\
+			\hline
+			Oct. 14 & \textit{HOLIDAY - FB}\\
+			\hline
+			Oct. 16 & Review + Inflation and Unemployment I - Phillips Curve \\
+			\hline
+			Oct. 21 & Inflation and Unemployment II - Monetarism + Augmented Phillips Curve\\
+			\hline
+			Oct. 23 & Post-Keynesianism - Taylor Rule \\
+			\hline
+			Oct. 28 & Review \\
+			\hline
+			Oct. 30 & Exam 2 \\
+			\hline
+			Nov. 4 & Short-run Macro - AS/AD \\
+			\hline
+			Nov. 6 & Medium-run Macro - Dynamic AS/AD \\
+			\hline
+			Nov. 11 & Review\\
+			\hline
+			Nov. 13 & Solow-Swan Growth Model I - Steady-state Condition\\
+			\hline
+			Nov. 18 & Solow-Swan Model II - Golden-rule\\
+			\hline
+			Nov. 20 & Solow-Swan Model III - Convergence\\
+			\hline
+			Nov. 25 & \textit{HOLIDAY - TG}\\
+			\hline
+			Nov. 27 & \textit{HOLIDAY - TG}\\
+			\hline
+			Dec. 2 & Review\\
+			\hline
+			Dec. 4 & Endogeneous Growth I - Divergence \\
+			\hline
+			Dec. 9 & Endogeneous Growth II - Human Capital\\
+			\hline
+			Dec. 11 & Public Debt\\
+			\hline
+			Dec. 13 & Climate Change\\
+			\hline
+			Wk of Dec 16-20 & Final of Exam (date/time set by Purdue\\
+		\hline
+		\end{tabular}
+		
+	}
+	
+	\vspace{0.25in}
+	
+	NOTE: Specific due dates for problem sets and assignments will be maintained in the Calendar on Brightspace. Schedule is subject to change, but exam dates will not change. 
+	
+	\pagebreak
+	
+	\section{Grading}
+	
+	\begin{enumerate}
+		
+		\item \textit{\textbf{Participation = 5\%}}: There will be "quizzes" given at the end of 8 \textit{random} classes. These quizzes will be short (5-10mins) and cover material/topics currently being discussed in class, as well as some "off-topic" questions (e.g. what are your 3 favorite movies of all time?). While correct answers will be provided for on-topic questions, these will be attendance quizzes and simply answering the questions will get you full credit. 
+		
+		\item \textbf{\textit{Problem Sets = 20\%}}: Problem sets contain typically model-based mathematical and graphical work based on the theories/concepts covered in class. Problem sets will be graded on effort and precision. \textbf{Students may work in groups of up to 4 on problem sets and turn in a single set of solutions. Each student in the group will receive the same grade}. Problem sets will also be turned in via hardcopy only. See course rules below for regulatory specifics. 
+		
+		\item \textbf{\textit{Data Assignments = 15\%}}: Data assignments will have the students collecting and presenting economic data, while providing responses to general prompts related to material being discussed in class. These are meant to engage the empirical nature of modern macroeconomics, and give students some insights into how economic indicators are used to assess economic conditions and make policy recommendations. These will be turned in as a single PDF on Brightspace. Again, see below for specifics. 
+		
+		\item \textbf{\textit{Exams = 60\%}}: There are 3 exams, 2 midterms and a final. All exams will be mostly multiple choice and (some) true/false questions, along with a few problem-set-esque questions. The two midterms will be taken in typical class at typical class time on their respective dates. The final exam date/time will be set by the university and advertised once set.   
+		
+	\end{enumerate}	
+	
+
+$$G = (0.5(part) + 0.20(ps) + 0.15(data) + 0.60(exam))^{*}100$$
+
+
+
+\begin{tabular}[]{l|l}
+	
+	Grade & Range \\
+	
+	\hline
+	
+	A & 100--92.5\%\\
+	
+	B+ & 89.4--86.5\%\\
+	
+	B & 86.4--79.5\%\\
+	
+	C+ & 79.4--76.5\%\\
+	
+	C & 76.4--69.5\% \\
+	
+	D+ & 69.4--64.5\% \\
+	
+	D  & 64.4--59.5\% \\
+	
+	F & 59.4--0\%\\
+	
+\end{tabular}
+
+
+	\pagebreak
+
+\section{Course Policies}
+
+
+1. \textit{\textbf{Final Letter Grade Policy}}: Beyond the opportunity discussed below, there is no extra credit. Your final grade will be based on a weighted average of your participation, problem set, data assignment, and exam grades. Final grades are \underline{not} curved, but exams \underline{may be} curved if the mean grades are especially low. It should be noted however, historically there has been no reason to curve, as student performance has always fallen within Daniels School expectations. See ``\href{https://business.purdue.edu/undergraduate/current-students/advising-policies.php}{target grade distribution}.''    \\
+
+2. \textbf{\textit{Work Turn-in Policy}}: 
+
+\hspace{0.25in} a. Work should NEVER be emailed to either Prof. Yarbrough or the TAs.  
+
+\hspace{0.25in} b. All work should be neatly organized, well-labeled, and professionally presented. Egregiously hard to read work will be assessed a 20\% penalty.
+
+\hspace{0.25in} c. Any work submitted as \textit{hard-copy} should be stapled. Hard-copies without staples will be assessed a 10\% penalty. 
+
+\hspace{0.25in} d. Any work submitted as \textit{digital} to Brightspace (e.g. data assignments) should be a single file PDF document. Images, written work, should either be embedded in a PDF or saved as PDF files themselves, then combined for turn in. For help translating files types into PDF, \href{https://acrobat.adobe.com/link/acrobat/jpg-to-pdf?x_api_client_id=adobe_com&x_api_client_location=jpg_to_pdf}{see here}. For help with combining PDFs into a single PDF, \href{https://acrobat.adobe.com/link/acrobat/combine-pdf?x_api_client_id=adobe_com&x_api_client_location=combine_pdf}{see here}. Non-PDF files will not be accepted.\\
+
+3. \textbf{\textit{Late-work Policy}}: Late work will be accepted for 24 hours after a due date. The late penalty is 25\%. After 24 hours late work will not be accepted. Late work is still subject to the rules outlined in the Work Turn-in Policy above.\\
+
+3. \textbf{\textit{Missed Exam Policy}}: Missed exams that are not emergency related and/or preceded by communication with prof. Yarbrough about the reason, need, and plan to re-take \textbf{cannot be made-up}. School-related (including sports) obligations that preclude the taking of an exam are fine, but that information should be relayed to Prof. Yarbrough as soon as possible. In the event of a verifiable last-minute emergency (e.g. flat-tire), please email the professor as soon as possible to explain. \\
+
+4. \textbf{\textit{AI Policy}}: The use of AI to aid in course completion is encouraged for ``work-flow'' tasks, such as gathering general information, summarizing academic articles, and help with written work concision. However, copying and pasting chatbot output to pass off as student work is considered a violation of the Purdue Honor Code. Additionally, these tools are notoriously bad at quantitative analysis, so students are warned against using such tools to solve questions such as are on quizzes and problem sets.\\
+
+5. \textbf{\textit{Email Policy/Discord}}: Students are welcome to email Prof. Yarbrough, but responding to student questions, especially material-related questions, is cumbersome in Outlook. Further, because asking questions in a public setting is a key benefit of a class, I would tend to prefer if material-related questions be posted to the course Discord channel \href{https://discord.gg/XpaaYxwjZK}{here}. Personal and/or official university issues should be handled over email however. \\
+
+6. \textbf{\textit{Extra Credit Opportunities}}: To incentivize student responses to course evaluations, there is an opportunity for each student to receive extra credit based on the response rate. If at least 90\% of the class completes course evaluations then each student gets 1\%. If at least 80\%... then each student gets 0.5\%. At least 70\%... 0.25\%.\footnote{The historic average in 73\% as of Spring 2025.} 
+
+
+\pagebreak
+
+
+
+
+	
+	
+	
+	\section{Policies and Support Services}
+	
+	\textbf{Academic integrity}: Academic integrity is one of the highest values that Purdue University holds. Individuals are encouraged 
+	to alert university officials to potential breaches of this value by either emailing integrity@purdue.edu or 
+	by calling 765-494-8778. While information may be submitted anonymously, the more information is 
+	submitted the greater the opportunity for the university to investigate the concern. More details are 
+	available on our course Brightspace table of contents, under University Policies.
+	
+	\vspace{0.05in}
+	
+	Incidents of academic misconduct in this course will be addressed by the course instructor and referred to 
+	the Office of Student Rights and Responsibilities (OSRR) for review at the university level. Any 
+	violation of course policies as it relates to academic integrity will result minimally in a failing or zero 
+	grade for that particular assignment, and at the instructor’s discretion may result in a failing grade for the 
+	course. In addition, all incidents of academic misconduct will be forwarded to OSRR, where university 
+	penalties, including removal from the university, may be considered.
+	
+	\bigskip
+	
+	\textbf{Accessibility and Nondiscrimination}: If you anticipate or experience physical or academic barriers based on disability, you are welcome to let me know so that we can discuss options. You are also encouraged to contact the Disability Resource 
+	Center at: drc@purdue.edu or by phone: 765-494-1247. More details are available on our course 
+	Brightspace under Accessibility Information.
+	
+	\vspace{0.05in}
+	
+	Purdue is committed to maintaining a community which recognizes and values the inherent worth and 
+	dignity of every person; fosters tolerance, sensitivity, understanding, and mutual respect among its 
+	members; and encourages each individual to strive to reach his or her own potential. In pursuit of its goal 
+	of academic excellence, the University seeks to develop and nurture diversity. The University believes 
+	that diversity among its many members strengthens the institution, stimulates creativity, promotes the 
+	exchange of ideas, and enriches campus life. More details are available on our course Brightspace table of 
+	contents, under University Policies.
+	
+	\bigskip
+	
+	\textbf{Grief Absence Policy}: We recognize that a time of bereavement is very difficult for a student. The University therefore 
+	provides the following rights to students facing the loss of a family member through the Grief 
+	Absence Policy for Students (GAPS). Students will be excused for funeral leave and given the 
+	opportunity to earn equivalent credit and to demonstrate evidence of meeting the learning outcomes
+	for missed assignments or assessments in the event of the death of a member of the student’s family.
+	
+	\bigskip
+	
+	\textbf{Emergency Preparation}: In the event of a major campus emergency, course requirements, deadlines and grading percentages are subject to changes that may be necessitated by a revised semester calendar or other circumstances beyond 
+	the instructor’s control. Relevant changes to this course will be posted onto the course website or can be 
+	obtained by contacting the instructors or TAs via email or phone. You are expected to check your
+	@purdue.edu email on a frequent basis.
+	
+
+\end{document}
